@@ -22,7 +22,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 
 version = "3.2.0s"
 group = "org.cakepowered.api"
-archivesBaseName = "CakeApiMod"
+archivesBaseName = "cakeapimod"
 
 sourceCompatibility = "1.8"
 targetCompatibility = "1.8"
