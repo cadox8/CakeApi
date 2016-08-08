@@ -35,6 +35,17 @@ minecraft {
 	makeObfSourceJar = false
 }
 
+dependencies {
+   compile 'com.pixelmonmod.pixelmon:pixelmonAPI:1.10.2-5.0.0-beta4'
+}
+
+repositories {
+	maven {
+        name = "mvn-repo"
+		url = "https://github.com/pagoru/mvn-repo/raw/master/"
+	}
+}
+
 jar{
 	manifest{
 		attributes(
