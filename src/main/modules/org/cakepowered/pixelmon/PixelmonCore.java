@@ -6,7 +6,7 @@ import org.cakepowered.api.event.InitializationEvent;
 
 import net.minecraftforge.common.MinecraftForge;
 
-@CakePlugin(name = "PixelMon|Module", id = "pixelmon_module", version = "1.0.0")
+@CakePlugin(name = "PixelMon|Module", id = "pixelmon_cakeapi", version = "1.0.0")
 public class PixelmonCore {
 
 	@EventSubscribe
