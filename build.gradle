@@ -6,10 +6,15 @@ buildscript{
 			name = "forge"
 			url = "http://files.minecraftforge.net/maven"
 		}
-		dependencies {
-			classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
-		}
+		maven {
+            name = "mvn-repo"
+            url = "https://github.com/pagoru/mvn-repo/raw/master/"
+        }
 	}
+    dependencies {
+        classpath 'com.pixelmonmod.pixelmon:pixelmonAPI:1.10.2-5.0.0-beta4'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
+    }
 }
 
 apply plugin: 'net.minecraftforge.gradle.forge'
