@@ -32,6 +32,7 @@ minecraft {
     runDir = "run"
 
     mappings = "snapshot_20160518"
+	makeObfSourceJar = false
 }
 
 jar{
@@ -48,6 +49,7 @@ main {
     java {
         srcDir 'src/main/java'
         srcDir 'src/main/api'
+		srcDir 'src/main/modules'
     }
     resources {
         srcDir 'src/main/resources'
@@ -69,13 +71,4 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
-}
-
-task devJar(type: Jar) {
-    from sourceSets.main.output
-    classifier = 'dev'
-}
-
-artifacts {
-    archives devJar
 }
