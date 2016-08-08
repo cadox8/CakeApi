@@ -1,14 +1,16 @@
 package org.cakepowered.pixelmon;
 
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import org.cakepowered.api.core.CakePlugin;
+import org.cakepowered.api.event.EventSubscribe;
+import org.cakepowered.api.event.InitializationEvent;
 
-@Mod(name = "PixelMon|Module", modid = "pixelmon_module", version = "1.0.0", serverSideOnly = true)
+import net.minecraftforge.common.MinecraftForge;
+
+@CakePlugin(name = "PixelMon|Module", id = "pixelmon_module", version = "1.0.0")
 public class PixelmonCore {
 
-	@Mod.EventHandler
-	public static void init(FMLPreInitializationEvent event){
+	@EventSubscribe
+	public static void init(InitializationEvent event){
 		MinecraftForge.EVENT_BUS.register(EventInstance.INSTANCE);
 	}
 
