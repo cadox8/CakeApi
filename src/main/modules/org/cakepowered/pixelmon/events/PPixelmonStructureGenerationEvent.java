@@ -1,15 +1,17 @@
 package org.cakepowered.pixelmon.events;
 
 import org.cakepowered.api.util.BlockLocation;
+import org.cakepowered.mod.event.ApiEvent;
 import org.cakepowered.mod.world.ApiWorld;
 
 import com.pixelmonmod.pixelmon.api.events.PixelmonStructureGenerationEvent;
 
-public class PPixelmonStructureGenerationEvent {
+public class PPixelmonStructureGenerationEvent extends ApiEvent {
 	
 	private PixelmonStructureGenerationEvent e;
 	
 	public PPixelmonStructureGenerationEvent(PixelmonStructureGenerationEvent e) {
+		super(e);
 		this.e = e;
 	}
 	

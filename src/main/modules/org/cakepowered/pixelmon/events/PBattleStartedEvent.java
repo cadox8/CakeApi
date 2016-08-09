@@ -1,15 +1,19 @@
 package org.cakepowered.pixelmon.events;
 
+import org.cakepowered.api.core.Game;
 import org.cakepowered.api.entity.Player;
+import org.cakepowered.api.event.Event;
+import org.cakepowered.mod.event.ApiEvent;
 import org.cakepowered.mod.util.ForgeInterface;
 
 import com.pixelmonmod.pixelmon.api.events.BattleStartedEvent;
 
-public class PBattleStartedEvent {
+public class PBattleStartedEvent extends ApiEvent {
 	
 	private BattleStartedEvent e;
 	
 	public PBattleStartedEvent(BattleStartedEvent e) {
+		super(e);
 		this.e = e;
 	}
 	
@@ -29,8 +33,4 @@ public class PBattleStartedEvent {
 		return players;
 	}
 	
-	public void setCanceled(boolean cancel){
-		e.setCanceled(cancel);
-	}
-
 }

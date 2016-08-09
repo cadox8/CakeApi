@@ -1,16 +1,18 @@
 package org.cakepowered.pixelmon.events;
 
 import org.cakepowered.api.entity.Player;
+import org.cakepowered.mod.event.ApiEvent;
 import org.cakepowered.mod.util.ForgeInterface;
 import org.cakepowered.pixelmon.events.PEconomyEvent.PTransactionType;
 
 import com.pixelmonmod.pixelmon.api.events.EconomyEvent.PreTransactionEvent;
 
-public class PPreTransactionEvent {
+public class PPreTransactionEvent extends ApiEvent {
 	
 	private PreTransactionEvent e;
 	
 	public PPreTransactionEvent(PreTransactionEvent e){
+		super(e);
 		this.e = e;			
 	}
 	
