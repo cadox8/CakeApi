@@ -34,15 +34,15 @@ public class Vector3 {
     }
 
     public int getXi() {
-        return x.intValue();
+        return (int) Math.floor(x.doubleValue());
     }
 
     public int getYi() {
-        return y.intValue();
+        return (int) Math.floor(x.doubleValue());
     }
 
     public int getZi() {
-        return z.intValue();
+        return (int) Math.floor(x.doubleValue());
     }
 
     public float getXf() {
