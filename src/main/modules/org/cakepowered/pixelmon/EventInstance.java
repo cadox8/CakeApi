@@ -19,109 +19,109 @@ public enum EventInstance {
 
     //EconomyEvent.class
     @SubscribeEvent
-    public void on(EconomyEvent e) {
+    public void onEconomyEvent(EconomyEvent e) {
         post(new PEconomyEvent(e));
     }
 
     @SubscribeEvent
-    public void on(GetBalanceEvent e) {
+    public void onGetBalanceEvent(GetBalanceEvent e) {
         post(new PGetBalanceEvent(e));
     }
 
     @SubscribeEvent
-    public void on(PreTransactionEvent e) {
+    public void onPreTransactionEven(PreTransactionEvent e) {
         post(new PPreTransactionEvent(e));
     }
 
     @SubscribeEvent
-    public void on(PostTransactionEvent e) {
+    public void onPostTransactionEvent(PostTransactionEvent e) {
         post(new PPostTransactionEvent(e));
     }
 
 
     //BattleStartedEvent
     @SubscribeEvent
-    public void on(BattleStartedEvent e) {
+    public void onBattleStartedEvent(BattleStartedEvent e) {
         post(new PBattleStartedEvent(e));
     }
 
     //PlayerBattleEndedEvent.class
     @SubscribeEvent
-    public void on(PlayerBattleEndedEvent e) {
+    public void onPlayerBattleEndedEvent(PlayerBattleEndedEvent e) {
         post(new PPlayerBattleEndedEvent(e));
     }
 
     //PlayerBattleEndedAbnormalEvent.class
     @SubscribeEvent
-    public void on(PlayerBattleEndedAbnormalEvent e) {
+    public void onPlayerBattleEndedAbnormalEvent(PlayerBattleEndedAbnormalEvent e) {
         post(new PPlayerBattleEndedEvent(e));
     }
 
 
     //LostToTrainerEvent.class
     @SubscribeEvent
-    public void on(LostToTrainerEvent e) {
+    public void onLostToTrainerEvent(LostToTrainerEvent e) {
         post(new PTrainerBattleEndedEvent(e));
     }
 
     //BeatTrainerEvent.class
     @SubscribeEvent
-    public void on(BeatTrainerEvent e) {
+    public void onBeatTrainerEvent(BeatTrainerEvent e) {
         post(new PTrainerBattleEndedEvent(e));
     }
 
 
     //LevelUpEvent.class
     @SubscribeEvent
-    public void on(LevelUpEvent e) {
+    public void onLevelUpEvent(LevelUpEvent e) {
         post(new PLevelUpEvent(e));
     }
 
     //RareCandyEvent.class
     @SubscribeEvent
-    public void on(RareCandyEvent e) {
+    public void onRareCandyEvent(RareCandyEvent e) {
         post(new PRareCandyEvent(e));
     }
 
     //PixelmonCaptureEvent.class
     @SubscribeEvent
-    public void on(PixelmonCaptureEvent e) {
-        post(new PPixelmonCaptureEvent(e));
+    public void onCaptureEvent(CaptureEvent e) {
+        post(new PCaptureEvent(e));
     }
 
     //PixelmonSendOutEvent.class
     @SubscribeEvent
-    public void on(PixelmonSendOutEvent e) {
+    public void onPixelmonSendOutEvent(PixelmonSendOutEvent e) {
         post(new PPixelmonSendOutEvent(e));
     }
 
     //PixelmonSpawnEvent.class
     @SubscribeEvent
-    public void on(PixelmonSpawnEvent e) {
+    public void onPixelmonSpawnEvent(PixelmonSpawnEvent e) {
         post(new PPixelmonSpawnEvent(e));
     }
 
     //PixelmonStructureGenerationEvent.class
     @SubscribeEvent
-    public void on(PixelmonStructureGenerationEvent e) {
+    public void onPixelmonStructureGenerationEvent(PixelmonStructureGenerationEvent e) {
         post(new PPixelmonStructureGenerationEvent(e));
     }
 
     //PlayerActivateShrineEvent.class
     @SubscribeEvent
-    public void on(PlayerActivateShrineEvent e) {
+    public void onPlayerActivateShrineEvent(PlayerActivateShrineEvent e) {
         post(new PPlayerActivateShrineEvent(e));
     }
 
     //RidePokemonEvent.class
     @SubscribeEvent
-    public void on(RidePokemonEvent e) {
+    public void onRidePokemonEvent(RidePokemonEvent e) {
         post(new PRidePokemonEvent(e));
     }
 
     //ThrowPokeballEvent.class
     @SubscribeEvent
-    public void on(ThrowPokeballEvent e) {
+    public void onThrowPokeballEvent(ThrowPokeballEvent e) {
         post(new PThrowPokeballEvent(e));
     }
 

@@ -12,7 +12,7 @@ buildscript{
         }
 	}
     dependencies {
-        classpath 'com.pixelmonmod.pixelmon:pixelmonAPI:1.10.2-5.0.0-beta4'
+        classpath 'com.pixelmonmod.pixelmon:pixelmonAPI:1.10.2-5.0.0-beta7'
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
     }
 }
@@ -20,7 +20,7 @@ buildscript{
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 
-version = "3.2.1"
+version = "3.3.0"
 group = "org.cakepowered.api"
 archivesBaseName = "cakeapimod"
 
@@ -36,7 +36,7 @@ minecraft {
 }
 
 dependencies {
-   compile 'com.pixelmonmod.pixelmon:pixelmonAPI:1.10.2-5.0.0-beta4'
+   compile 'com.pixelmonmod.pixelmon:pixelmonAPI:1.10.2-5.0.0-beta7'
 }
 
 repositories {
