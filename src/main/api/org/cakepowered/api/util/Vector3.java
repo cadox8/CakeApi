@@ -38,11 +38,11 @@ public class Vector3 {
     }
 
     public int getYi() {
-        return (int) Math.floor(x.doubleValue());
+        return (int) Math.floor(y.doubleValue());
     }
 
     public int getZi() {
-        return (int) Math.floor(x.doubleValue());
+        return (int) Math.floor(z.doubleValue());
     }
 
     public float getXf() {
